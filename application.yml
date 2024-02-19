@@ -1,3 +1,2 @@
-token:
-  expiration_time: 86400000
-  secret: user-service-secret-secret-default-application
+hello:
+  message: "Hello World"

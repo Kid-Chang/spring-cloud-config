@@ -7,4 +7,7 @@ spring:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:testdb
     username: sa
-    password: '{cipher}70416af855ec9306f47ad1ab9258e36498794c06e93e874f6f231d89bd1ab84c'
+    password: '{cipher}AQBKiB69C9zcxsqeyx4JAppg/16wBvv/Fl7XuQ1SmYkxgdcj2VOdn1tiITa9NOJyWv03Rnbzd1R8yurxtIYDWcbVd3FkgRZ9CoP3ji8YcIMU9Qi+j9J2rgmtmd+ZQ2TK395VmS3OCIimnEGBm6eM+g4D0JkjM7IPAN6ORSXApE70efhDssyrD0KdBfKihqxmmlflmplrJASMbUCmpJGbutrpnE5oPzZR0yZX0uiLFm7ua0Cj64vhvbEX+tMG6d0/bH5xdT/I/siz0j5I6lLg3SO4DLFBJmW6gDTyQUPfPVqAMXB2Ud/S+bxeKQwdhQc0NPnQS52ENjEkuNtmzUQTRB5VrPUX2eZ2Z0bb9/0jv/0CRgWNf3S9URx23/4qwsiVTmo='
+
+order_service:
+  url: http://127.0.0.1:8000/order-service/%s/orders
