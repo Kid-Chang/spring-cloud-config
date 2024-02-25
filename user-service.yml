@@ -10,4 +10,8 @@ spring:
     password: '{cipher}AQBKiB69C9zcxsqeyx4JAppg/16wBvv/Fl7XuQ1SmYkxgdcj2VOdn1tiITa9NOJyWv03Rnbzd1R8yurxtIYDWcbVd3FkgRZ9CoP3ji8YcIMU9Qi+j9J2rgmtmd+ZQ2TK395VmS3OCIimnEGBm6eM+g4D0JkjM7IPAN6ORSXApE70efhDssyrD0KdBfKihqxmmlflmplrJASMbUCmpJGbutrpnE5oPzZR0yZX0uiLFm7ua0Cj64vhvbEX+tMG6d0/bH5xdT/I/siz0j5I6lLg3SO4DLFBJmW6gDTyQUPfPVqAMXB2Ud/S+bxeKQwdhQc0NPnQS52ENjEkuNtmzUQTRB5VrPUX2eZ2Z0bb9/0jv/0CRgWNf3S9URx23/4qwsiVTmo='
 
 order_service:
-  url: http://127.0.0.1:8000/order-service/%s/orders
+#  url: http://127.0.0.1:8000/order-service/%s/orders
+  url: http://order-service/order-service/%s/orders
+  # microservice name: order-service일때 이렇게 사용하며, 이러기 위해서는 @LoadBalanced라는 어노테이션을 유저 서비스 클라이언트에 추가해야 한다.
+  exception:
+    orders_is_empty: User's orders is empty
