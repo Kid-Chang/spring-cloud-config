@@ -15,3 +15,6 @@ order_service:
   # microservice name: order-service일때 이렇게 사용하며, 이러기 위해서는 @LoadBalanced라는 어노테이션을 유저 서비스 클라이언트에 추가해야 한다.
   exception:
     orders_is_empty: User's orders is empty
+
+gateway:
+  ip: 127.0.0.1
