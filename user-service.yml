@@ -17,4 +17,4 @@ order_service:
     orders_is_empty: User's orders is empty
 
 gateway:
-  ip: 127.0.0.1
+  ip: 172.19.0.5
